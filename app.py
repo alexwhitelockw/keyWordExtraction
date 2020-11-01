@@ -16,5 +16,3 @@ def key_word():
     return render_template("kwResults.html",
                            keywords=kwOutput)
 
-if __name__ == '__main__':
-    app.run()
