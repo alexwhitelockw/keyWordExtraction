@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from gensim.summarization import keywords
+from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
@@ -17,4 +18,6 @@ def key_word():
                            keywords=kwOutput)
 
 if __name__ == '__main__':
-    app.run()
+    #app.run()
+    http_server=WSGIServer(("", 5000), app)
+    http_server.serve_forever()
