@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container">
+            <div class="card-columns">
+                    {% for word in keywords %}
+                        <div class="card">
+                            <div class="card-body text-center">
+                                {{ word }}
+                            </div>
+                        </div>
+                    {% endfor %}
+            </div>
+    </div>
+
+{% endblock %}
