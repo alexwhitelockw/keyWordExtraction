@@ -6,8 +6,9 @@
                 <textarea class="form-control" id="textUpload" rows="4" name="textUp" placeholder="Add Text Here"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-secondary" name="textSub">Submit</button>
+                <button type="submit" class="btn btn-secondary" id="textSubBtn" name="textSub">Submit</button>
             </div>
         </form>
     </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='/js/pageLogic.js') }}"></script>
 {% endblock %}
